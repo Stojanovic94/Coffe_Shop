@@ -1,0 +1,126 @@
+/* Postavi telo stranice da bude centrirano vertikalno i horizontalno */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Dodato za lepši izgled */
+}
+
+.container {
+    width: 500px; /* Možeš promeniti širinu po želji */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Senka oko sadržaja */
+    border-radius: 10px; /* Zaobljeni uglovi */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Promena boje za ispis "Menu" */
+h2 {
+    color: #800000; /* Bordo boja */
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+/* Bordo pozadina i beli tekst za zaglavlja tabele */
+th {
+    background-color: #800000; /* Bordo boja za pozadinu */
+    color: white; /* Beli tekst */
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 80px;
+    text-align: center;
+}
+
+/* Postavljanje svakog reda (form-row) u mrežni prikaz */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolone: Label, Input, "-", "+" */
+    gap: 10px; /* Razmak između kolona */
+    align-items: center; /* Vertikalno poravnanje */
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    grid-column: 1 / 2; /* Prva kolona (labela) */
+}
+
+.form-row input {
+    grid-column: 2 / 3; /* Druga kolona (input) */
+}
+
+.form-row button:nth-child(3) { /* "-" dugme */
+    grid-column: 3 / 4; /* Treća kolona */
+}
+
+.form-row button:nth-child(4) { /* "+" dugme */
+    grid-column: 4 / 5; /* Četvrta kolona */
+}
+
+/* Stilizacija dugmića za "+" i "-" */
+button {
+    background-color: #800000; /* Bordo boja */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a83232; /* Svetlija bordo boja za hover efekat */
+}
+
+/* Stilizacija redova za Price, Tax Rate i Total Amount da budu u istom redu sa inputima */
+.form-row-wide {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolone */
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Poseban stil za Price red da bude ispod Venti Cups input polja */
+.form-row-wide.price-row {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolone kao i form-row */
+}
+
+.price-row input {
+    grid-column: 2 / 3; /* Postavi u drugu kolonu ispod input polja Venti Cups */
+}
+
+/* Promena boje za labele */
+label {
+    color: #800000; /* Bordo boja */
+}
+
+#orderSummary {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}

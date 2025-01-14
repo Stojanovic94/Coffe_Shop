@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Coffee Shop</h1>
+    
+        <div class="center">
+            <button id="toggleButton">Click for directions</button>
+            <div id="directions" style="display: none;">
+                <p>Press + button to add cup</p>
+                <p>Press - button to remove cup</p>
+            </div>
+        </div>
+
+        <h2>Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Volume</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tall</td>
+                    <td>9 oz</td>
+                    <td>3,99 €</td>
+                </tr>
+                <tr>
+                    <td>Grande</td>
+                    <td>12 oz</td>
+                    <td>4,50 €</td>
+                </tr>
+                <tr>
+                    <td>Venti</td>
+                    <td>15 oz</td>
+                    <td>5,99 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <div class="form-row">
+                <label for="tallCups">Tall Cups</label>
+                <input type="number" id="tallCups" value="0" min="0">
+                <button type="button" onclick="changeQuantity('tallCups', -1)">-</button>
+                <button type="button" onclick="changeQuantity('tallCups', 1)">+</button>
+            </div>
+            
+            <div class="form-row">
+                <label for="grandeCups">Grande Cups</label>
+                <input type="number" id="grandeCups" value="0" min="0">
+                <button type="button" onclick="changeQuantity('grandeCups', -1)">-</button>
+                <button type="button" onclick="changeQuantity('grandeCups', 1)">+</button>
+            </div>
+            
+            <div class="form-row">
+                <label for="ventiCups">Venti Cups</label>
+                <input type="number" id="ventiCups" value="0" min="0">
+                <button type="button" onclick="changeQuantity('ventiCups', -1)">-</button>
+                <button type="button" onclick="changeQuantity('ventiCups', 1)">+</button>
+            </div>
+
+        <!-- Cena u istom redu sa prilagođenim izgledom -->
+        <div class="form-row-wide price-row">
+            <label for="price">Price</label>
+            <input type="number" id="price" readonly>
+        </div>
+
+        <!-- Tax Rate u istom redu -->
+        <div class="form-row-wide price-row">
+            <label for="taxRate">Tax Rate (20%)</label>
+            <input type="number" id="taxRate" readonly>
+        </div>
+
+        <!-- Total Amount u istom redu -->
+        <div class="form-row-wide price-row">
+            <label for="totalAmount">Total Amount</label>
+            <input type="number" id="totalAmount" readonly>
+        </div>
+
+
+            <button type="button" onclick="clearFields()">Clear</button>
+            <button type="button" onclick="completeOrder()">Complete Order</button>
+        </form>
+
+        <p id="orderSummary"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
