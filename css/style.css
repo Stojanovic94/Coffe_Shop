@@ -9,7 +9,7 @@ html, body {
 }
 
 .container {
-    width: 500px; /* Možeš promeniti širinu po želji */
+    width: 500px;
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Senka oko sadržaja */
