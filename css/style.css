@@ -34,7 +34,6 @@ table {
     border-collapse: collapse;
 }
 
-/* Bordo pozadina i beli tekst za zaglavlja tabele */
 th {
     background-color: #800000; /* Bordo boja za pozadinu */
     color: white; /* Beli tekst */
