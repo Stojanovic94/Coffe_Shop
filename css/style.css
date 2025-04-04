@@ -54,7 +54,6 @@ input[type="number"] {
     text-align: center;
 }
 
-/* Postavljanje svakog reda (form-row) u mrežni prikaz */
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolone: Label, Input, "-", "+" */
