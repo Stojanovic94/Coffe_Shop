@@ -63,7 +63,7 @@ input[type="number"] {
 }
 
 .form-row label {
-    grid-column: 1 / 2; /* Prva kolona (labela) */
+    grid-column: 1 / 2;
 }
 
 .form-row input {
