@@ -71,7 +71,7 @@ input[type="number"] {
 }
 
 .form-row button:nth-child(3) {
-    grid-column: 3 / 4; /* Treća kolona */
+    grid-column: 3 / 4;
 }
 
 .form-row button:nth-child(4) { /* "+" dugme */
