@@ -70,7 +70,7 @@ input[type="number"] {
     grid-column: 2 / 3;
 }
 
-.form-row button:nth-child(3) { /* "-" dugme */
+.form-row button:nth-child(3) {
     grid-column: 3 / 4; /* Treća kolona */
 }
 
