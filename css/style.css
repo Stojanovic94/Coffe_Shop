@@ -67,7 +67,7 @@ input[type="number"] {
 }
 
 .form-row input {
-    grid-column: 2 / 3; /* Druga kolona (input) */
+    grid-column: 2 / 3;
 }
 
 .form-row button:nth-child(3) { /* "-" dugme */
