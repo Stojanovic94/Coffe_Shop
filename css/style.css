@@ -91,7 +91,6 @@ button:hover {
     background-color: #a83232; /* Svetlija bordo boja za hover efekat */
 }
 
-/* Stilizacija redova za Price, Tax Rate i Total Amount da budu u istom redu sa inputima */
 .form-row-wide {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 kolone */
