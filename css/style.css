@@ -99,7 +99,6 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* Poseban stil za Price red da bude ispod Venti Cups input polja */
 .form-row-wide.price-row {
     grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolone kao i form-row */
 }
