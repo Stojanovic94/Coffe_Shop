@@ -107,7 +107,6 @@ button:hover {
     grid-column: 2 / 3; /* Postavi u drugu kolonu ispod input polja Venti Cups */
 }
 
-/* Promena boje za labele */
 label {
     color: #800000; /* Bordo boja */
 }
