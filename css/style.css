@@ -93,7 +93,7 @@ button:hover {
 
 .form-row-wide {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 kolone */
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
