@@ -104,7 +104,7 @@ button:hover {
 }
 
 .price-row input {
-    grid-column: 2 / 3; /* Postavi u drugu kolonu ispod input polja Venti Cups */
+    grid-column: 2 / 3;
 }
 
 label {
