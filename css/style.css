@@ -75,7 +75,7 @@ input[type="number"] {
 }
 
 .form-row button:nth-child(4) { /* "+" dugme */
-    grid-column: 4 / 5; /* Četvrta kolona */
+    grid-column: 4 / 5;
 }
 
 button {
