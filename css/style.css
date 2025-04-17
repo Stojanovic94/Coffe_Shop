@@ -100,7 +100,7 @@ button:hover {
 }
 
 .form-row-wide.price-row {
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 kolone kao i form-row */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .price-row input {
