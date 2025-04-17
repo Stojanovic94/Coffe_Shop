@@ -88,7 +88,7 @@ button {
 }
 
 button:hover {
-    background-color: #a83232; /* Svetlija bordo boja za hover efekat */
+    background-color: #a83232;
 }
 
 .form-row-wide {
